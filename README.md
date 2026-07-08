@@ -1,49 +1,75 @@
-# 📚 Research Mate Dashboard (React + Vite + Tailwind + AI Tools)
+# 📚 Research Mate 
 
-A smart, lightweight research assistant dashboard built using **React**, **Vite**, **TypeScript**, and **Tailwind CSS**. The dashboard integrates:
-
-* 🧠 AI-powered paper summarization
-* 📝 Citation management tools
-* 💬 An integrated chatbot for quick research queries
-
-This project focuses entirely on the **frontend**, designed for interaction with AI/Node.js APIs.
+A modern research assistant dashboard built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. Designed to streamline academic workflows through AI-assisted paper summarization, citation management, and intelligent research support.
 
 ---
 
-## 📸 Demo
+## ✨ Features
 
-![demo](demo.png)
-
----
-
-## 🔧 Features
-
-* 📄 AI-based research paper summarization UI
-* 🔍 Keyword extraction & highlight-ready summaries
-* 📝 Citation manager interface (APA/MLA/IEEE-ready)
-* 💬 Built‑in chatbot panel for quick Q&A
-* ⚡ Vite-powered React app (fast, lightweight)
-* 🎨 Tailwind CSS for responsive UI
-* ♻️ Modular component-based architecture
+- 📄 AI-assisted research paper summarization
+- 🔍 Keyword extraction and highlight-ready summaries
+- 📝 Citation management interface (APA, MLA, IEEE)
+- 💬 Integrated chatbot for research assistance
+- ⚡ Fast and lightweight architecture powered by Vite
+- 🎨 Responsive interface built with Tailwind CSS
+- ♻️ Modular component-based design
 
 ---
 
-## 🗂️ Folder Structure
+## 📸 Preview
 
+![Dashboard Preview](demo.png)
+
+---
+
+## 🛠️ Built With
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+
+---
+
+## 🧠 AI Integration
+
+The frontend is designed to communicate with AI-powered backend services, including:
+
+- Research paper summarization
+- Large Language Models (LLMs)
+- Citation formatting services
+- Research assistant chatbot APIs
+
+Example request:
+
+```ts
+await fetch("/api/summarize", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    text: paperContent,
+  }),
+});
 ```
+
+---
+
+## 📁 Project Structure
+
+```text
 ResearchMate-Dashboard/
-├── src/                   # React source code
-│   ├── components/        # UI components
-│   ├── pages/             # Page views (optional based on your structure)
-│   ├── hooks/             # Custom hooks
-│   ├── utils/             # Helper functions (AI requests, parsing)
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── hooks/
+│   ├── utils/
 │   ├── App.tsx
 │   └── main.tsx
-├── index.html             # App entry
-├── vite.config.ts         # Vite configuration
-├── tailwind.config.js     # Tailwind setup
-├── tsconfig.json          # TypeScript config
+├── public/
 ├── package.json
+├── vite.config.ts
 └── README.md
 ```
 
@@ -51,72 +77,61 @@ ResearchMate-Dashboard/
 
 ## 🚀 Getting Started
 
-### 1️⃣ Install dependencies
+### Clone the repository
+
+```bash
+git clone https://github.com/SadmanSakib06/Research-Mate-Dashboard.git
+cd Research-Mate-Dashboard
+```
+
+### Install dependencies
 
 ```bash
 npm install
-# or
-pnpm install
-# or
-yarn install
 ```
 
-### 2️⃣ Run development server
+### Start the development server
 
 ```bash
 npm run dev
 ```
 
-App runs at:
+Open your browser:
 
-```
+```text
 http://localhost:5173
 ```
 
 ---
 
-## 🧠 AI Integration (Frontend Overview)
+## ⚙️ Available Scripts
 
-This frontend was designed to connect with:
-
-* **Node.js API endpoints** for AI summarization
-* **OpenAI or similar LLM services** via HTTP calls
-* **Citation management micro‑API** for formatting outputs
-
-Request structure:
-
-```ts
-await fetch("/api/summarize", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ text: paperContent }),
-});
+```bash
+npm run dev
+npm run build
+npm run preview
 ```
 
 ---
 
-## 📦 Scripts
+## 📌 Project Status
 
-```json
-npm run dev      # start dev server
-npm run build    # production build
-npm run preview  # preview production
-```
+🚧 Prototype
+
+This project demonstrates the frontend architecture of an AI-assisted research dashboard. Backend AI services are represented through planned API integrations.
 
 ---
 
-## 🔧 Tech Stack
+## 🔮 Future Improvements
 
-* **React + TypeScript**
-* **Vite**
-* **Tailwind CSS**
-* **AI API integrations (backend not included here)**
+- 🤖 LLM-powered paper summarization
+- 📑 Semantic paper search
+- 📚 PDF parsing and annotation
+- ☁️ Cloud synchronization
+- 🔍 Intelligent literature review assistant
 
 ---
 
-## 🙌 Acknowledgements
+## 📄 License
 
-* React
-* Vite
-* Tailwind CSS
-* OpenAI & LLM tools
+MIT License.
